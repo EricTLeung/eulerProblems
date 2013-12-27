@@ -29,6 +29,6 @@ language Perl. There is a possibility that they are in Python.
 11) Largest product in a grid
     - largestProductGrid.pl
 12) Highly divisible triangle number
-    - (Not Complete)
+    - highDivisibleTriangleNum.pl
 13) Large sum
     - largeSum.pl

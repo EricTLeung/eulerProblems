@@ -37,7 +37,7 @@ until ( $sors > 500 ) {
 
 print "$triangle\n";
 
-sub sum {
+sub sum { # sum 
     my ($n) = @_;
     my $sum = $n * ($n+1) / 2;
     return $sum;
