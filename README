@@ -4,43 +4,31 @@ Project Euler. So far, these are scripted in the programming
 language Perl. There is a possibility that they are in Python.
 
 #) Title of Project Euler Problem
-- Title of script
+    - Title of script
 
 1) Multiples of 3 and 5 
-- multiples3And5.pl
-
+    - multiples3And5.pl
 2) Even Fibonacci numbers
-- 
-
+    - evenFibo.pl
 3) Largest prime factor
-- 
-
+    - largestPrimeFactor.pl
 4) Largest palindrome product
-- 
-
+    - largestPalindromeProduct.pl
 5) Smallest multiple
-- 
-
+    - (Completed by hand)
 6) Sum square difference
-- 
-
+    - sumSquareDiff.pl
 7) 10001st prime
-- 
-
+    - 10001Prime.pl
 8) Largest product in a series
-- 
-
+    - largestProductInSeries.pl
 9) Special Pythagorean triplet
-- 
-
+    - specialPrythagoreanTrip.pl
 10) Summation of primes
-- 
-
+    - sumOfPrimes.pl
 11) Largest product in a grid
-- 
-
+    - largestProductGrid.pl
 12) Highly divisible triangle number
-- 
-
+    - (Not Complete)
 13) Large sum
-- 
+    - largeSum.pl
