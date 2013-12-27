@@ -7,9 +7,20 @@ use warnings;
 # hundred 50-digit numbers
 
 # initialize all numbers into array
+open ( IN1, $ARGV[0] ) || die "Input error.\n";
+my @num; # initialize number array
+while ( <IN1> ) { # iterate through input
+    chomp; # remove new line character
+    push(@num, $_); # add number to array
+}
 
-# interate over all of them mod 10,000,000,000 (10 digits)
-
-# add mod 10,000,000,000
+# add numbers together
+my $totalMod = 0; # initialize sum element
+foreach (@num) { # iterate through numbers
+    $totalMod += $_; # add to total
+}
 
 # return answer
+$totalMod = substr($totalMod, 0, 11); # take first 11 places
+$totalMod =~ s/\.//; # remove decimmal point
+print "$totalMod\n"; # return answer
