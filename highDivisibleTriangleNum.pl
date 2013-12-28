@@ -4,8 +4,6 @@
 # What is the value of the first triangle number to have over five hundred
 # divisors?
 
-# Farthest: 2001000 triangle num
-# Number: 2000
 use strict;
 
 # initialize variables
