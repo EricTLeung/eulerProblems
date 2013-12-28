@@ -4,36 +4,21 @@
 # What is the value of the first triangle number to have over five hundred
 # divisors?
 
-# Farthest: 9033375
-
+# Farthest: 2001000 triangle num
+# Number: 2000
 use strict;
 
+# initialize variables
 my $sors = 0; # number of divisors
-my $num = 0; # triangle number place
-my $triangle; # triangle numnber
+my $num = 2000; # triangle number place
+my $triangle = 0; # triangle numnber answer
+my $maxSors = 0; # maximum number of divisors seen so far
 
-# testing phase
-my $test1 = &sum(10); # find 
-print "$test1\n";
-my @test = &divisors($test1);
-print "@test\n";
-print scalar(@test),"\n";
-
+# loop to find number 
 until ( $sors > 500 ) { # until num of divisors greater than 500
     $num++; # increase number
-#   print "Num: $num\n";
-    my $tri = &sum($num); 
-    $triangle = $tri;
-#   print "Tri Num: $tri\n";
-    my @divide = &divisors($tri);
-    $sors = scalar( @divide ); 
-#   print "$sors\n\n";
-
-    if ( $num % 250 == 0 ) {
-        print "Triangle Num: $tri\n";
-        print "Num Divisors: $sors\n\n";
-    }
-
+    $triangle = &sum($num); # find triangle number
+    $sors = &divisorsMod($triangle);
 }
 
 # return triangle number
@@ -46,22 +31,15 @@ sub sum { # sum of first 'n' numbers
     return $sum; # return result
 }
 
-sub divisors { # Find divisors for number
+sub divisorsMod { # find num of divisors using mod operation
     my ($n) = @_; # take in number
-    my @divide; # make divisors array
-    for ( my $k = 1; $k < $n/2; $k++ ) {
-        my $l = $n / $k;
-        $l = int($l);
-        if ( $l*$k == $n ) {
-            push @divide, $l;
-            push @divide, $k;
+    my $divisorsNum = 0; # initialize number of divisors variable
+    my $sqNum = sqrt($n); # find square root of triangle number
+    for ( my $k = 1; $k <= $sqNum; $k++ ) { # loop until sqrt of number
+        if ($n % $k == 0) { # if the modulus is equal to zero
+            $divisorsNum++; # add 1 to total num of divisors
         }
     }
-    my %hash;
-    foreach ( @divide ) {
-        $hash{$_} = 1;
-    }
-    @divide = keys(%hash);
-    @divide = sort( @divide );
-    return @divide;
+    $divisorsNum *= 2; # multiply by 2 to count other half
+    return $divisorsNum; # return answer
 }
