@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 # Program 'longestCollatzSeq.pl'
-# Which stating number, under one million, produces the longest chain?
+# Which starting number, under one million, produces the longest chain?
 
 # initial parameters
 my $length = 0; # variable for keeping track of length of chain
