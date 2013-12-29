@@ -12,7 +12,7 @@ my $maxNum = 0; # maximum number for longest chain
 my $last = 0; # last number in chain
 
 # while loop until chain >1,000,000
-for (my $n = 1; $length < 1000000; $n++) {
+for (my $n = 1; $n < 1000000; $n++) {
     
     # take care of first case
     if ($n == 1) {
