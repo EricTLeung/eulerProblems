@@ -27,7 +27,7 @@ language Perl. There is a possibility that they are in Python.
 10) Summation of primes
     - sumOfPrimes.pl
 11) Largest product in a grid
-    - largestProductGrid.pl
+    - (Used Excel to find largest numbers)
 12) Highly divisible triangle number
     - highDivisibleTriangleNum.pl
 13) Large sum
