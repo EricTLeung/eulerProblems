@@ -5,30 +5,50 @@ language Perl. There is a possibility that they are in Python.
 
 #) Title of Project Euler Problem
     - Title of script
+    - Solved date
 
 1) Multiples of 3 and 5 
     - multiples3And5.pl
+    - Solved 15 June 2013
 2) Even Fibonacci numbers
     - evenFibo.pl
+    - Solved 15 June 2013
 3) Largest prime factor
     - largestPrimeFactor.pl
+    - Solved 15 June 2013
 4) Largest palindrome product
     - largestPalindromeProduct.pl
+    - Solved 15 June 2013
 5) Smallest multiple
     - (Completed by hand)
+    - Solved 15 June 2013
 6) Sum square difference
     - sumSquareDiff.pl
+    - Solved 16 June 2013
 7) 10001st prime
     - 10001Prime.pl
+    - Solved 16 June 2013
 8) Largest product in a series
     - largestProductInSeries.pl
+    - Solved 16 June 2013
 9) Special Pythagorean triplet
     - specialPrythagoreanTrip.pl
+    - Solved 18 June 2013
 10) Summation of primes
     - sumOfPrimes.pl
+    - Solved 18 June 2013
 11) Largest product in a grid
     - (Used Excel to find largest numbers)
+    - Solved 28 December 2013
 12) Highly divisible triangle number
     - highDivisibleTriangleNum.pl
+    - Solved 27 December 2013
 13) Large sum
     - largeSum.pl
+    - Solved 27 December 2013
+14) Longest Collatz Sequence
+    - longestCollatzSeq.pl
+    - Solved 29 December 2013
+15) Lattie paths
+    - latticPaths.pl
+    - Not solved yet
