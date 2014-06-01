@@ -4,11 +4,11 @@
 
 use strict;
 
-my $total = 0;
-my $up = 1000;
-for ( my $n = 1; $n < $up; $n++ ) {
-    if ( $n % 3 == 0 || $n % 5 == 0 ) {
-        $total += $n;
+my $total = 0; # set empty total
+my $up = 1000; # upper limit
+for ( my $n = 1; $n < $up; $n++ ) { # starting at 1 until reach limit
+    if ( $n % 3 == 0 || $n % 5 == 0 ) { # modulus 3 or 5
+        $total += $n; # add multiple to total
     }
 }
-print "$total\n";
+print "$total\n"; # print out total
