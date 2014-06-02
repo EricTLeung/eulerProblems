@@ -6,11 +6,9 @@ language Perl. There is a possibility that they are in Python. They are all
 written by Eric Leung
 
 * Title
-Scipt title
-Solve date
+..*Scipt title
+..*Solve date
 
 * Multiples of 3 and 5
-
-multiples3and5.pl
-
-Solve 15 June 2013
+..*multiples3and5.pl
+..*Solve 15 June 2013
