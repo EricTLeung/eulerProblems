@@ -5,7 +5,6 @@ These are a collection of scripts that will solve problems from Project Euler
 language Perl. There is a possibility that they are in Python. They are all
 written by Eric Leung
 
-1. Title of Project Euler Problem - "Title of script" - Solved date
 2. Multiples of 3 and 5 - "multiples3And5.pl" - 15 June 2013
 3. Even Fibonacci numbers - "evenFibo.pl" - 15 June 2013
 4. Largest prime factor - "largestPrimeFactor.pl" -15 June 2013
