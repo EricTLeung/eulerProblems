@@ -21,11 +21,3 @@ written by Eric Leung
 15. Longest Collatz Sequence - "longestCollatzSeq.pl"- 29 December 2013
 16. Lattie Paths - "latticPaths.pl"- 1 June 2014
 17. Number Letter Counts - "numLetterCounts.pl - N/A
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
