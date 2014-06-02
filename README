@@ -37,18 +37,21 @@ language Perl. There is a possibility that they are in Python.
 10) Summation of primes
     - sumOfPrimes.pl
     - Solved 18 June 2013
-11) Largest product in a grid
+11) Largest product in a Grid
     - (Used Excel to find largest numbers)
     - Solved 28 December 2013
-12) Highly divisible triangle number
+12) Highly Divisible Triangle Number
     - highDivisibleTriangleNum.pl
     - Solved 27 December 2013
-13) Large sum
+13) Large Sum
     - largeSum.pl
     - Solved 27 December 2013
 14) Longest Collatz Sequence
     - longestCollatzSeq.pl
     - Solved 29 December 2013
-15) Lattie paths
+15) Lattie Paths
     - latticPaths.pl
-    - Not solved yet
+    - Solved 1 June 2014
+16) Number Letter Counts
+    - numLetterCounts.pl
+    - N/A
