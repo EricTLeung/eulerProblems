@@ -48,6 +48,7 @@ my %hash = (
   1000 => 14  # one thousand and = 3+8+3 = 14
 
 # generate all numbers
+my @numbers = (1..1000); # create array of all the numbers
 
 # iterate through numbers and check hash
 
