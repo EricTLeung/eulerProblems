@@ -46,6 +46,7 @@ my %hash = (
   800  => 15, # eight hundred and = 5+7+3 = 15
   900  => 19, # nine hundred and  = 9+7+3 = 19
   1000 => 14  # one thousand and = 3+8+3 = 14
+);
 
 # generate all numbers
 my @numbers = (1..1000); # create array of all the numbers
