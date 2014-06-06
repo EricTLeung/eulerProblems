@@ -51,7 +51,7 @@ my %threeHash = (
   9  => 19, # nine hundred and  = 9+7+3 = 19
 );
 my %fourHash = (
-  1 => 14  # one thousand and = 3+8+3 = 14
+  1 => 11  # one thousand = 3+8 = 11
 );
 
 # generate all numbers
@@ -91,13 +91,20 @@ for (@twos) { # loop through two digit numbers
 	} else { # all greater numbers
 		my $temp = $_; #temp store number
 		my @tempNum = split "", $temp; # temp store number as array
-		$totalTwos += 9*$twoHash{$tempNum[0]} + $totalOnes;
+		$totalTwos += 10*$twoHash{$tempNum[0]} + $totalOnes;
 	}
 }
 
 # check three digit numbers
 my $totalThrees; # make total three digit number variable
+for (@threes) {
+	my $temp = $_;
+	my @tempNum = split "", $temp;
+	$totalThrees += 100*$threeHash{$tempNum[0]} + $totalTwos - 3;
+}
 
 # add eleven to total for 'one thousand'
+my $totalFours = $fourHash{1};
 
 # print answer
+print $totalOnes + $totalTwos + $totalThrees + $totalFours,"\n";
