@@ -19,7 +19,7 @@ my %oneHash = (
   8   => 5, # eight = 5
   9   => 4, # nine = 4
 );
-my %twoHash = (
+my %teenHash = (
   10  => 3, # ten = 3
   11  => 6, # eleven = 6
   12  => 6, # twelve = 6
@@ -30,6 +30,8 @@ my %twoHash = (
   17  => 9, # seventeen = 9
   18  => 8, # eighteen = 8
   19  => 8, # nineteen = 8
+);
+my %twoHash = (
   2   => 6, # twenty = 6
   3   => 6, # thirty = 6
   4   => 5, # forty = 5
@@ -54,9 +56,6 @@ my %fourHash = (
   1 => 11  # one thousand = 3+8 = 11
 );
 
-# generate all numbers
-my @numbers = (1..1000); # create array of all the numbers
-
 # create variables
 my @ones; # keep all one digit numbers
 my @twos; # keep all two digit numbers
@@ -64,35 +63,20 @@ my @threes; # keep all three digit numbers
 
 # there is no @fours because there is only one four digit number
 
-# iterate through numbers and sort
-for (@numbers) {
-	@temp = split "", $_; # split number into array
-	$realNum = $_; # save actual number
-	if (scalar(@temp) == 1) { # check one digit numbers
-		push (@ones, $realNum); # put number with one digits
-	} elsif (scalar(@temp) == 2) { # check two digit numbers
-		push (@twos, $realNum); # put number with two digits
-	} elsif (scalar(@temp) == 3) { # check three digit numbers
-		push (@threes, $realNum); # put number with three digits
-	}
-}
-
 # check one digit numbers
 my $totalOnes;
-for (@ones) {
-	$totalOnes += $oneHash{$_};
+for my $key (keys %oneHash) {
+	$totalOnes += $oneHash{$key};
 }
 
 # check two digit numbers
 my $totalTwos; # make total two digit number variable
-for (@twos) { # loop through two digit numbers
-	if ($_ < 20) { # check for numbers less than 20
-		$totalTwos += $twoHash{$_}; # add lengths to two digit var
-	} else { # all greater numbers
-		my $temp = $_; #temp store number
-		my @tempNum = split "", $temp; # temp store number as array
-		$totalTwos += 10*$twoHash{$tempNum[0]} + $totalOnes;
-	}
+for my $key (keys %teenHash) { # loop through teen numbers
+	$totalTwos += $teenHash{$key};
+}
+
+for my $key (keys %twoHash) { # loop through rest of two digit numbers
+	$totalTwos += $twoHash{$key}*10 + $totalOnes; 
 }
 
 # check three digit numbers
