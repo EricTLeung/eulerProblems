@@ -19,7 +19,7 @@ written by Eric Leung.
 13. Highly Divisible Triangle Number - "highDivisibleTriangleNum.pl" - 27 December 2013
 14. Large Sum - "largeSum.pl" - 27 December 2013
 15. Longest Collatz Sequence - "longestCollatzSeq.pl" - 29 December 2013
-16. Lattie Paths - "latticPaths.pl" - 1 June 2014
-17. Number Letter Counts - "numLetterCounts.pl - N/A
+16. Lattie Paths - (Used combinatorics) - 1 June 2014
+17. Number Letter Counts - "numLetterCounts.pl - 8 June 2014
 18. Maximum Path Sum 1 - N/A - N/A
 19. Counting Sundays - N/A - N/A
