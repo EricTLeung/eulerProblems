@@ -50,18 +50,8 @@ my %threeHash = (
   6  => 13, # six hundred and = 3+7+3 = 13
   7  => 15, # seven hundred and = 5+7+3 = 15
   8  => 15, # eight hundred and = 5+7+3 = 15
-  9  => 19, # nine hundred and  = 9+7+3 = 19
+  9  => 14, # nine hundred and  = 4+7+3 = 14
 );
-my %fourHash = (
-  1 => 11  # one thousand = 3+8 = 11
-);
-
-# create variables
-my @ones; # keep all one digit numbers
-my @twos; # keep all two digit numbers
-my @threes; # keep all three digit numbers
-
-# there is no @fours because there is only one four digit number
 
 # check one digit numbers
 my $totalOnes;
@@ -81,14 +71,12 @@ for my $key (keys %twoHash) { # loop through rest of two digit numbers
 
 # check three digit numbers
 my $totalThrees; # make total three digit number variable
-for (@threes) {
-	my $temp = $_;
-	my @tempNum = split "", $temp;
-	$totalThrees += 100*$threeHash{$tempNum[0]} + $totalTwos - 3;
+for my $key (keys %threeHash) {
+	$totalThrees += 100*$threeHash{$key} + $totalTwos + $totalOnes - 3;
 }
 
 # add eleven to total for 'one thousand'
-my $totalFours = $fourHash{1};
+my $totalFours = 11;
 
 # print answer
 print $totalOnes + $totalTwos + $totalThrees + $totalFours,"\n";
