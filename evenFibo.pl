@@ -4,6 +4,12 @@
 # Consider terms in Fibonacci seq whose values do not exceed four million
 # Find the sum of the even-valued terms
 
+# prints out program details
+print "This script considers terms in the Fibonacci sequence whose values\n";
+print "do not exceed four million.\n\n";
+print "This script will find the sum of the even-valued terms in the\n";
+print "Fibonacci sequence.\n\n";
+
 my $j = 2; # create second number
 my $k = 1; # create first number
 my $sum = 0; # init sum variable
